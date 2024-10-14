@@ -1,0 +1,17 @@
+body{
+    font-size:24px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#dda15e;
+    /* use in the background colors like rgb(),rgbs(),hsl(),hsla() */
+    background-color:#bc6c25;
+     /* for contrast checking color contrast checker */
+     /* coolors.co wesite */
+}
+
+article{
+    background-color:#faedcd;
+    padding:40px;
+    margin:40px;
+    border-radius: 4px;
+}

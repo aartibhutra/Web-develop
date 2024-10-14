@@ -1,0 +1,69 @@
+/* TOPIC OF THE TEXTFORMATING  */
+
+/* text-align */
+/* text-decoration  */
+/* text-indent  */
+/* text-tranform  */
+/* text-spacing */
+/* text shadow : in this if you put 2 numbers (2px(right side/horizontally),2px(down/vertically) we add third property also blur radius eg 2px and give any kind of color)  specify the horizontal shadow and vertical shadow  */
+
+/* font-family by default we have a family serif and have a difference between sans-serif and serif
+
+if we define 3 font-family and it sequentially check if first font-family spelling is wrong then it goes to second font-family or apply send font-family */
+/* go fonts.google.com */
+/* web safe fonts eg monospace, cursive  */
+
+/* font-size here we use rem also */
+/* font-weight */
+/* font-style */
+
+body{
+    background-color:burlywood;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    /* text-decoration: line-through;
+    text-decoration-line: underline;
+    text-decoration-color:darkred;
+    text-decoration-style: dotted;
+
+    /* text shadow effect  */
+    /* text-shadow:2px 2px; */ 
+    /* text-shadow: 2px 2px darkgoldenrod; */
+    /* apply 2 shadow at a time  */
+    /* color:transparent; */
+    text-shadow:2px 2px darkgoldenrod,3px 3px darkorange;
+
+    /* work with  some font  */
+    /* font-family: 'Times New Roman', Times, serif;
+     */
+     /* font-family: 'Times New Roman', monospace;  */
+     /* font-family: fantasy or cursive ; */
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+p{
+    text-indent: 40px;
+    /* letter-spacing: 0.1rem; */
+    line-height: 1.6rem;
+    /* word-spacing: 10px; 
+     word-spacing: -2px; 
+     word-spacing:  
+     white-space :  */
+
+     /* font-size: larger; */
+      font-size: 1.3rem; /*1rem = 16px */
+
+      /* font-weight: 100; */
+      font-weight: bold;
+       
+      font-style: italic;
+
+}
+a{
+
+    text-decoration-line:underline;
+    text-decoration-color: blueviolet;
+}

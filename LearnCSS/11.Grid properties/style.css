@@ -1,0 +1,211 @@
+/* Grid Container 
+    the grid container becomes by setting the display property to grid */
+
+    /* Grid container properties 
+            a.gap: have a two type of  row-gap and column-gap
+
+            b.grid-template-columns(width): if we want to make diffrent-different column with different width use this 
+
+            here we define absolute , relative , fractional (if we want columns of similar width w.r.t the container ) and have a **repeat function (use in fraction,px e0tc)
+
+            ***use of auto 
+            we also use **auto auto** its same as 1fr 1fr leftover width divide automatically into two parts auto means like we divide extra width 
+
+            c.grid-template-rows(height) : define height of the each rows 
+
+                    here one concept is like if we want to give height of leftover rows we choose the deafult height for them with the help of **grid-auto-rows**
+
+            d.justify-content:with the help of this we align our items in row-direction (horizontally/x-axis) like we spacing them and etc  
+                    *by default its value is start 
+                    * for grid we use center and end 
+                    * also we have space-around , space-between ,space-evenly
+
+            e.align-content: vertically align the content 
+                * to see this we have to give some height to the container 
+                *by default its value is stretch
+
+
+            f.align-items: humare joh items hai apne by deafult box size hai uska content   center mai aajayega if we use *center*    
+                    * here we play with the default box size to give them some properties or value 
+            
+            */
+
+/* Grid Template Area :
+
+    named grid items can be referred to by the grid-template-areas property of the grid container. the grid-area property can also be used to assign names to grid items
+    
+    for this use we don't define columns(grid-template-columns)*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 600px;
+    border: 2px solid rgb(197, 112, 38);
+    display: grid;/*by default grid works top to bottom*/
+    
+    /* gap: 10px;  */
+    row-gap: 20px;
+    column-gap: 5px;
+
+    /* here we make 3 different column of different width  */
+     /* grid-template-columns: 100px 200px 300px;  */
+
+     /* here we define relative and absolute value so relative value boxes shrink but absolute value boxes doesn't shrink  */
+    /* grid-template-columns: 10vw 200px 300px; */
+    /* grid-template-columns: 30% 70%; */
+
+    /* fractional value  */
+    /* use repeat function if want to write four 1fr */
+    /* grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: repeat(4,100px); */
+    /* if we don't know how many columns we want then use auto-fill 
+    generally we don't recommand to use auto-fill in grid bcz we use flex instead */
+    /* grid-template-columns: repeat(auto-fill,100px); */
+
+    /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+    /*(2+1+1+1)=5 divide the container*/
+
+    /* use auto auto  */
+    /* grid-template-columns: auto auto; */
+
+    /* like we also use one auto and one px like its up to us how to use it  */
+    /* grid-template-columns: 200px auto; */
+
+
+
+    /* grid-template-columns: 200px 200px 200px;  */
+    /* grid-template-rows: 200px 80px ; */
+
+    /* leftover rows(jinke liye humne height define nhi kri ho ) we give them by default height with the help of  */
+    /* grid-auto-rows: 150px; */
+
+
+    /* justify-content: center;
+    justify-content: end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+
+
+    /* align-content: center;
+    align-content: start;
+    align-content: space-evenly;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: end;
+    align-content: baseline; */
+
+
+    /* to see this how it works use inspect  */
+    /* align-items: center;
+    align-items: baseline;
+    align-items: start;
+    align-items: end; */
+
+
+    /* hdr:header,sbr:sidebar,ftr:footer we gave them any name as we want  you can write whatever name you want but all name spelling should be same  */
+    grid-template-areas:"hdr hdr hdr hdr"
+                        "sbr main main main"
+                        "sbr main main main"
+                        "ftr ftr ftr ftr";
+}
+
+/* Grid Child Items
+    the direct child elements of a grid container automatically becomes grid items 
+            
+        
+            Grid Childern  Properties:
+                **moves the particular child within the box 
+                            a.justify-self: horizaontally move within the box (imaginary box)
+                                    * by default its value is stretch
+
+                            b.align-self: vertically move (top-bottom)within the box or imaginary box 
+                                * similar to align items but we move all boxes(items) within the container but here we move only one box 
+                                * increse the height of the container to better understanding 
+
+                            c.grid-column:to better understanding we use 3 columns here 
+                                    * if we want column to cover more than 1 column space (span)
+                                    * its a shorten property of grid- column-start and grid-column-end 
+                                    * if we want to cover 2 column in one column we use or write in grid-column-start:1; and grid-column-end:3; why we write here 3 bcz in between column lines like the gap colunts as column for better understanding we use inspect 
+
+                                    ** here negative number also supproted 
+
+                            d.grid-row: same work as column 
+
+
+                            e.grid-area: with the help of this we define both row and column (grid-column and grid-row)
+                            
+                                **it is also to use define the name 
+                            */
+
+
+
+/* width and height here is not define the width and height they(box) have according to the container  */
+.box{
+    border: 2px solid darkslateblue;
+    padding: 12px;
+}
+#box-4{
+    background-color: chocolate;
+    /* justify-self: center;
+    justify-self: end;
+    justify-self: left; */
+    /* align-self: end; */
+}
+#box-5{
+    background-color: crimson;
+    /* align-self: center;
+    align-self: end;
+    align-self: start; */
+}
+#box-1{
+    background-color: indianred;
+    /* grid-column-start:1;
+    grid-column-end:3; */
+    /* we also write above both lines as */
+    /* grid-column: 1/3; */
+
+    /* if we only want to write start column and we not give the end index we only want to give how much column we want to cover or taken the space  so write as*/
+    /* in span boxes are count  */
+    /* grid-column: 1/span 2; */
+
+    /* grid-column-end:4; */
+
+    /* in above we define only 3 column but in below we want 4 column so last column should be in auto mode and crete a 4 column 
+    but always prefer above grid-columns-template numbering  */
+    /* grid-column-end:5; */
+
+    /* if we want to go last column ,use negative number  */
+    /* grid-column: 1/-1;
+    grid-column:1/-2 ;  */
+
+
+}
+#box-3{
+    background-color: goldenrod;
+    /* grid-row: 2/6; */
+    /* grid-row: 2 / span 4; */
+
+    /* grid-area: row start/column start/row end / column end; */
+    /* for better understanding use this only and comment all properties  */
+    /* grid-area: 1/1/3/3; */
+}
+#box-1{
+    grid-area: hdr;
+}
+#box-2{
+    grid-area: sbr;
+}
+#box-3{
+    grid-area: main;
+}
+#box-4{
+    grid-area: ftr;
+}
+
+

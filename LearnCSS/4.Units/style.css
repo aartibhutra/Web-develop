@@ -1,0 +1,57 @@
+/* in this unit in css we study about px,vw,vh,%,em,rem  */
+
+
+/* percentage is used to define width and height with respect to parent  */
+/* here its act like a parent and child  */
+
+
+
+/* here we use the concept of relative and absolute */
+/* em (relative)
+by default em sixe id 1 em for parent  */
+
+/* by deafult the size of HTML is 1em  */
+
+
+/*html{
+    font-size:2em;
+} */
+
+/* best practice is that font size define individually */
+main{
+    /* syntax:<line-width>||<line-style>||<color> */
+    border:5px solid brown;
+    /* width:50%; */
+    /* vw : view width  */  
+    /* 1vw = 10px  */
+    /* width : 25vw;  */
+    width:25%;
+}
+/* body is the parent of header  */
+body{
+    font-size: 2em;
+    /* first it check the size h1 then header then body then html so it multiple all em like em(1*2*2*2) */
+    /* 8em=96px  */
+}
+/* header is the parent of h1  */
+header{
+    font-size: 2em;
+}
+h1{
+    /* can't use the vw in the h1 font-size  */
+    /* here when we use the font -size 40px but it doesnot change bcz the original size is 32 px so we use don't use the abolute size(px) in the font size we use relative size(em) */
+    /* here em is relative to parent  */
+    /* rem is related to the root  */
+    font-size:3rem;
+    /* font-size: 40px; */
+    /* by deafult it size is 2em  */
+}
+section{
+    border:5px dashed green;
+    /* width:50%; */
+    width:50vw;
+    /* vh:view height  */
+    /* height:200vh;  */
+}
+
+/* the size of the h3 and p also increase bcz it inherit the body(parent) size that is 2em check it by inspect  */

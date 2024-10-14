@@ -1,0 +1,164 @@
+/* Flex Container  
+
+    means: the flex container becomes flexible by setting the display property to flex 
+            flex container property :
+                a.flex-direction:we have a value in this like row,column, row-reverse ,column-reverse
+                b.flex-wrap: here we have wrap , wrap-reverse,nowrap 
+
+                by default they have a property nowrap
+
+                c.flex-flow: here we define both flex-direction and flex-wrap
+
+
+                d.justify-content: with the help of this we justify(basically left,right,center align ) children in the main(horizontal)-axis
+
+                have a value like space-around , space-between ,flex-start,flex-end,center
+
+                works only around main-axis
+
+
+                e.align-items: have a default value stretch 
+                have a values like center ,flex-start(vertically on top),flex-end 
+
+
+
+                f. align-content: used to shift or change the gap between row and column
+            */
+
+/* Align items in flex 
+    ** to center our box we use the (align-items) property to align our item on the cross axis (vertical axis )which in this case is the block axis running vertically 
+    
+    ** we use (justify-content) to align the item on the main axis(horizontal axis ) which in this case is the inline axis running horixontally. 
+    
+    ** important point we want to remember that when we use flex it only applicable to main axis (horizontal axis ) 
+     if we want to use cross axis then we have to change the direction with the help of flex-direction*/
+
+
+     /* use **gap** instead of margin 
+     
+            values :
+            a.gap
+            b.row-gap
+            c.column-gap*/
+
+*{
+    /* use this bcz we define 2px border and this create problems in future that's why we use box-sizing  */
+    /* so in the size of container we also include the border size  */
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    border: 2px solid darkblue;
+
+    /* when we want to a space between two boxes and not in the coners then we don't use margin we use **gap*  */
+    /* gap: 10px; */
+
+    /* with the help of this container become flex box and all container children become flex children  */
+    display: flex;/*for doing this container become flex */
+
+    /* by default it's value is always row but if want to flex on cross axis we have to change the direction  */
+    /* it is flexing vertically (cross-axis) */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+
+
+    /* flex-wrap: wrap; /* check this through inspect*/
+    /* flex-wrap: wrap-reverse;
+    flex-wrap: nowrap; */
+
+    /* it means it wrap in the direction of row   */
+    flex-flow: wrap row;
+    /* flex-flow: wrap column; */
+    /* flex-flow: row;/ */
+    
+    justify-content: space-around;
+     justify-content: space-between; 
+     /* by default it has a property of flex-start */
+     justify-content: flex-start;
+     justify-content: flex-end;
+     justify-content: center;
+
+     align-items: stretch;
+     align-items: flex-end;
+     align-items: flex-start;
+     align-items: center;
+
+     align-content: flex-start;
+      align-content: space-between; /*space between two rows */
+
+      align-content: space-evenly;
+
+} 
+
+
+/* Flex Child Items 
+        means : the direct child elements of a flex container automatically becomes flexible (flex)items */
+
+/* Flex Child properties
+        a.order: by default its value is zero and it works like in ascending order they arrange elements
+        usually we don't use this we directly arrange the order in html bcz screen reader top to bottom 
+
+
+        ***b.flex-grow: grow the size of the child 
+
+        c.flex-shrink: by default property is 1 
+         when we define flex-shrink in some of the box then the highest value is going to shrink faster as compared to lower value  
+
+         see the example for using without wrap display 
+
+        d.flex-basis: if we want to define width of any element in the main direction then we use this flex-basis  
+
+        defines the initial width in the direction of main axis for a particular child 
+
+        use the flex-flow and without using gap 
+
+        e.flex: if  we want to difine all above three properties(flex-grow,flex-shrink,flex-basis) together then we use flex 
+
+
+
+        f.align-self: if we want that any child align themselves in the cross shrink 
+        
+        */
+
+.box{
+    border: 2px solid darkmagenta;
+    width: 80px;
+    /* flex-basis: 25%; */
+}
+#box-1{
+    /* order:1; */
+    /* flex-grow: 1;
+    flex-shrink: 2; */
+
+    /* flex: grow shrink basis ;  */
+    flex: 0 0 200px;
+    /* align-self: flex-start; */
+}
+
+    /* flex-grow: 2; grow in double speed as compared to box-1 */
+    /* flex-basis: 200px; */
+#box-3{
+    align-self: flex-start;
+}
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

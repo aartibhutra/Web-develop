@@ -1,0 +1,87 @@
+/* universal tag  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+   background: linear-gradient(to top left, rgb(75, 22, 68),rgb(108, 90, 154));
+}
+.inner-box{
+    width: 380px;
+    height: 400px;
+    /* auto (left to right) help the inner-box comes to the center of the parent   */
+    margin: 0 auto;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 70px;
+    background-color: rgba(171, 109, 175, 0.668);
+    box-shadow: 10px 10px 10px rgb(74, 13, 105);
+}
+.Signup-header h1{
+    font-size: 2.5rem;
+    color: rgb(67, 12, 12);
+    
+}
+.Signup-header p{
+    font-size: 0.9rem;
+    color: rgb(42, 27, 4);
+}
+.Signup-body{
+    margin: 20px 0;
+}
+.Signup-body p{
+    margin: 20px 0;
+}
+.Signup-body p label{
+    display: block;
+    font-weight: bold;
+}
+.Signup-body p input{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid darkviolet;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+/* #submit is also used  */
+.Signup-body p input[type="submit"]{
+    background-color: rgb(128, 55, 128);
+    border: none;
+    color: beige;
+    cursor: pointer;
+}
+.Signup-body p input[type="submit"]:hover{
+    background-color: rgb(54, 6, 54);
+}
+.Signup-footer p{
+    color: rgb(54, 33, 7);
+    text-align: center;
+}
+.Signup-footer p a{
+    color:  rgb(24, 7, 24);
+}
+.circle{
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+    background:linear-gradient(to top right, rgb(23, 16, 73),rgb(120, 10, 124),white) ;
+    position: absolute;
+}
+.c1{
+    top: 100px;
+    left: 40px;
+}
+.c2{
+    bottom: 200px;
+    right: 50px;
+}
+

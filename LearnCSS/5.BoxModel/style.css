@@ -1,0 +1,41 @@
+/* in box model first inner layer is content then padding then boader and the outer most layer is margin  */
+
+/* * is the universal selector  */
+/* by defalut  every element has some margin so we assign them as 0 by universal selector  */
+/* when we assign margin and padding 0 then all control takecare ourself  */
+*{
+    /* margin and padding by default has some value assign them so we assign them 0 to control all thing by ourself  */
+    margin:0;
+    padding:0;
+
+
+    /* in the .box we don't have a fix 200px width and height but if we want fix width and height we define then we use box-sizing  */
+    /* and if we don't use the box-sizing and we define style in the element for padding then boxes sizes also differ  */
+    box-sizing: border-box; 
+}
+.box{
+    width:200px;
+    height:200px;
+    border:20px solid brown;  
+
+
+
+     /* main motive of padding is to seprate the content to the boarder  */
+
+
+    /* in the padding we also define 4 differnet sizes for the 4 sides  */
+    /* it works as clock wise first top ,right,bottom,left  */
+    /* padding: 40px;
+     */
+     padding: 40px 30px 20px 10px;
+
+     /* but if we defing only two sides then first denote for top-bottom and second denote right-lft */
+
+     /* and if we define 3 px sizes then  first one denote to top and second one denote to right-left and third one denote to bottom  */
+
+
+
+     /* margin motive is to separate one element to the other element  */
+     margin:40px;
+
+}

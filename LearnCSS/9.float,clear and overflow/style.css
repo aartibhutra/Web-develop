@@ -1,0 +1,135 @@
+
+
+/* CSS Overflow
+    defination : the CSS overflow property controls what happens to content that is too big to fit into an area
+        overflow values: 
+            a.visible : by default paragraph has this property 
+
+            b. hidden : jitna bhi overflow hoga container mai use hide kerdete hai and we also don't access the data 
+
+            c. scroll
+            d. auto : overcome the disadvantages of scroll 
+            
+            **by dafault paragraph has a overflow property (visible)*/
+
+.container{
+    border:2px solid black;
+    color: rgb(169, 93, 2);
+    background-color: rgb(195, 172, 164);
+    /* width: 400px; if we remove the width then it automatically 100% width  */
+    /* height: 400px; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+
+
+    /* it is use to display nothing in the page  */
+    display: none;
+}
+
+
+/* CSS float 
+    defination: the css float property specifies how an element should float 
+            a. left: float on the left side 
+            b.right: float on right side 
+            c. none: no floating 
+            d. inherit : it imherit the property pf the parent clas  */
+
+/* for images see the wesbsite **placeholder images**  */
+
+/* use overflow bcz image overflow through the block1 and block1 height should be equal to the paragraph of the height   */
+/* with the help of this we separate the 2 images and 1 paragraph  floating in between two images   */
+
+/* .block1{
+    overflow: auto;
+} */
+
+.p1{
+    border: 2px solid rgb(13, 22, 204);
+    margin-right:100px ; /* dosen't matter to use this , we have to margin the image */
+}
+
+.imag1{
+    /* image float on left side  */
+    float: left;
+    /* image float on the right side  */
+    float: right;
+    margin-left: 40px; /* give the margin to the image */
+    /* float: inherit;  */
+}
+.imag2{
+    float: left;
+}
+
+
+/* CSS clear  
+    defination: the css clear property specifies what elements can float beside the cleared element and on which side 
+            clear values:
+                a. left
+                b.right: with the help of this it clears the path of right image here 
+                c.both: do the work for both left and right 
+                d.none
+                e.inherit*/
+
+/* for using this comment out the .block  */
+.p1{
+    clear: right;
+}
+.p2{
+    /* clear: right;  */
+    /* clear: left; */
+    clear: both;
+}
+
+
+/* NOTE  */
+/* we only use this for styling with text  */
+/* we have to use float and clear properties for text and image alignment  */
+/* WE don't use float and clear for layout  */
+
+/* ANOTHER EXAMPLE  */
+/* it(float and clear) is only used for  text and images alignment  */
+*{
+    box-sizing: border-box;
+}
+
+.BIGBOX{
+    width: 400px;
+    height: 400px;
+    background-color: burlywood;
+}
+.box{
+    /* here we also define width and height of all 4 boxes  */
+    border: 2px solid rgb(8, 126, 126);
+    overflow: auto;
+     /* float: left;  */
+}
+.b1{
+    width:100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    
+}
+.b2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(47, 53, 37);
+    float: left;
+    clear:left;
+
+}
+.b3{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    float: left;
+}
+.b4{
+    width:100px;
+    height: 100px;
+    background-color: darkgoldenrod;
+    float: left;
+    clear: left;
+    
+    
+}

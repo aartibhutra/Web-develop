@@ -1,0 +1,77 @@
+/* there are 4 types of selectors
+1.Simple selector
+2.Universal selector
+3.Grouping selector
+4.Nested selector */
+
+/* there are the specificity order like ICE(id>class>element) */
+
+
+
+/* universal styling has the highest priority so in this fantasy replaces the monospace */
+
+/* * this sign helps to give all element same property  */
+/* its a universal selector */
+*{
+    font-family: fantasy;
+}
+
+
+
+/* we have a three types of  Simple selector element ,Id,Class */
+/* element selector example */
+
+ /* body {
+     font-size: 24px;
+      px = pixels  
+}  */
+
+
+/* use id name for styling the id with # */
+/* we change the font color for particular article  */
+/* use color to change the font size */
+/* if we use id then use # */
+
+/* id selector example */
+
+/* #first{
+    color:brown;
+} */
+
+/* if we use class then use . */
+/* class gives the more funtionality in css */
+/* we use class for multiple places with one code */
+/* with the help of class we have many more function use in styling our paragraph */
+/* a class cannot start with number  */
+/* in a element there are more than one class */
+
+/* have a benifit we can give any property to any tag */
+/* class selector example */
+.purple{
+    color:purple;
+    font-family:monospace;
+    /* monospace means that in each letter we have an equal sapce  */
+}
+.highlight{
+    background-color:yellow ;
+    font-weight:bolder ;
+    font-style: italic;
+}
+
+/* use the grouping selector */
+#first, #second{
+    color:blue;
+}
+
+
+/* if we do color our first article paragraph */
+/* #its an example of nested selector  */
+#first>p{
+    color:green;
+}
+
+/* example of pseudo selector */
+/* check how it works then make your cursor on the paragraph */
+p:hover{
+    font-family:monospace;
+}

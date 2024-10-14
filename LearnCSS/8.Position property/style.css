@@ -1,0 +1,94 @@
+/* Postion property  */
+
+/* methods used for an element 
+
+    1.static: by default it is static 
+    2.relative: means relatedor relative  to the parent here parent is a container 
+            (here we define both negative and positive value )
+            **its working like top-left and bottom - right
+            a.bottom
+            b.right
+            c.left
+            d.top
+    3.absolute: work with html and it's parent is html .
+    relative to the html 
+    the parent of absolute element is not always the root element (html) it depends on like we assign the position parent or not like here if we assign position in the container class then the absolute work with respect to the container clas position 
+            **its working like top-left and bottom - right
+            a.bottom
+            b.right
+            c.left
+            d.top
+    4.fixed : fix the thing like we can't scroll the fixed value
+    
+    ****it is very important when we will making the navigation bar 
+
+
+    5.sticky:
+    
+    
+    */
+
+    /* z-index :  generally  that(child) comes always over the parent 
+    
+    highest z-index give the highest priority 
+    lowest z-index guve the lowest priority */
+
+    body{
+        color: bisque;
+    }
+
+    .container{
+        width:300px;
+        height:400px;
+        background-color: blanchedalmond;
+        margin: 100px;
+        /* position: relative; */
+    }
+    .box{
+        width:100px;
+        height:100px;
+    }
+    /* example of relative position  */
+    .red{
+        position: relative;
+        background-color: brown;
+        /* top:100px; */
+        /* left: 100px; */
+        /* right:100px; */
+        /* bottom: 100px; */
+    }
+    /* example of absolute position  */
+    .green{
+        background-color: darkslategray;
+        position:absolute;
+        /*relative to html (root element ) */
+         /* top: 0;
+        left: 0;  */
+        /* right: 0;
+        bottom: 0; */
+    }
+    /* example of fixed position  */
+    .blue{
+        background-color: chocolate;
+        /* position:fixed; */
+
+
+        /* here we also use top-left and bottom -right concept bcz it is also related to root element */
+
+        /* left: 0;
+        top: 0; */
+        /* bottom: 50px; */
+        /* right: 10px; */
+    }
+    /* sticky position  */
+    .pink{
+        background-color: rgb(17, 63, 150);
+        position: sticky;
+        top: 50px;
+        left: 50px;
+        
+    }
+    .spacer{
+        /* vh-->veiw height  */
+        height: 300vh; 
+    }
