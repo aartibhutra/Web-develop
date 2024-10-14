@@ -1,0 +1,61 @@
+/* we have a portrait mode , landscape mode  */
+/* with media we have three types :
+
+                a.screen
+                b.all
+                c.print
+
+*/
+body{
+    background-color: burlywood;
+}
+/* here (width<=400px)==(max-width:400px) written as decreasing order and read as upto*/
+/* @media (width<=400px){
+    body{
+        background-color: rgb(95, 60, 8);
+    }
+}
+
+@media (width<=200px){
+    body{
+        background-color: rgb(147, 104, 39);
+    }
+} */
+
+
+
+/* orientation:portrait means when height>width*/
+/* @media (orientation:portrait){
+    body{
+        background-color: rgb(246, 123, 0);
+    }
+} */
+
+
+/* min-width means starting from 
+and read as strating from */
+/* @media (min-width:400px){
+    body{
+        background-color: rgb(95, 60, 8);
+    }
+}
+@media (min-width:600px){
+    body{
+        background-color: rgb(190, 135, 53);
+    }
+} */
+
+
+
+/* we also use **and** logical and like both condition should be true  */
+/* @media (min-width:400px) and (max-width:600px) {
+    body{
+        background-color: rgb(95, 60, 8);
+    }
+} */
+ /* new syntex for and  */
+@media (400px<=width<=600px) {
+    body{
+        background-color: rgb(95, 60, 8);
+    }
+}
