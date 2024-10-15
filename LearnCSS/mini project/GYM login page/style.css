@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url("C:\Users\aarti\OneDrive\Pictures\images.jpeg");
+}
+.Outer-box nav{
+    margin: 20px;
+}
+.Outer-box nav button{
+    width: 100px;
+
+}

@@ -1,8 +1,10 @@
 css-tricks.com 
 emmet cheat sheets 
-fonts.google.com 
+fonts.google.com (for fonts)
 mdn web docs
 tailwind media queries(tailwindcss.com)
 
 fontawesome.con(for icons),create account->your account-
-> Manage Kits -> click on the ticket-> copy -> paste in the body 
+> your Kits -> click on the project-> copy the ticket -> paste in the html body (at the end where body ends )
+
+CSS Peeper(for images)
