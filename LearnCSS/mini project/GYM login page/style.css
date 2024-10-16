@@ -3,13 +3,77 @@
     margin: 0;
     box-sizing: border-box;
 }
+.Outer-box{
+    border: 2px solid;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, rgb(2, 26, 60),rgb(108, 84, 169));
+}
 body{
-    background-image:url("C:\Users\aarti\OneDrive\Pictures\images.jpeg");
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .Outer-box nav{
     margin: 20px;
+    
 }
 .Outer-box nav button{
     width: 100px;
-
+    background-color: rgb(42, 12, 61);
+    color: bisque;
+    height:30px;
+}
+.Inner-box {
+    width: 400px;
+    margin:0 auto;
+    position: relative;
+    top:40%;
+    transform: translateY(-50%);
+    padding: 20px 70px;
+    background-color: rgb(125, 106, 182);
+    /* background-color: rgba(171, 109, 175, 0.668); */
+    box-shadow: 20px 20px 10px rgb(8, 6, 15);
+}
+.Signup-header h1{
+    font-size: 2.5rem;
+    color: rgb(73, 12, 12);
+    
+}
+.Signup-header p{
+    font-size: 1rem;
+    color: rgb(47, 30, 4);
+}
+.Signup-body{
+    margin: 20px 0;
+}
+.Signup-body p{
+    margin: 20px 0;
+}
+.Signup-body p label{
+    display: block;
+    font-weight: bold;
+}
+.Signup-body p input{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid rgb(43, 9, 57);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+.Signup-body p input[type="submit"]{
+    background-color: rgb(89, 78, 141);
+    border: none;
+    color: rgb(199, 208, 217);
+    cursor: pointer;
+}
+.Signup-body p input[type="submit"]:hover{
+    background-color: rgb(12, 15, 23);
+}
+.Signup-footer p{
+    color: rgb(23, 14, 60);
+    text-align: center;
+    font-size: large;
+}
+.Signup-footer p a{
+    color:  rgb(195, 171, 228);
 }
