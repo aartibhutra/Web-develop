@@ -1,0 +1,35 @@
+INTRODUCTION :
+
+javascript is a scripting language that enables you to create dynamically updated contaent multimedia , animate images and much more .
+in HTML , Javascript code is inserted between <script> and </script> tages 
+usually we are making different file(script) for the javascript but we also write in html file 
+
+style written at first and script written at the end .
+
+
+**Variables in javascript
+    variables are containers for storing data we can declare a variable by using these keywords 
+    .. using let(mutable) for declaring block-scoped variable(new),in future we also change the value inside the let container 
+
+    ..using const for declaring constant variables,usually prefer to use const because it has less chances to give error bcz we can't change the value in future . 
+
+
+**Rules for writing variable names 
+.. variable names must start with either a letter , an underscore _ or the dollar sign $
+.. variable names cannot start with numbers 
+.. javascript is case-sensitive 
+..keywords cannot be used as variable names 
+
+**Data Types:
+    define:a datatype in programming is a classification that specifies which type of a variable has and what type of mathematical , relational or logical operations can be apllied to it without causing an error 
+    a. String:
+    b.Number:
+    c.Boolean:
+    d.Undefined:
+    e.Object:
+
+
+    Javascript Type Conversion :
+    //1. javascript considers 0 as false and all non-zero numbers as true and if true is converted to a number the result is converted to a number the result is always 1 .
+    //2. String() takes null and undefined and converts them to string 
+    //3. in javascript undefined , null, 0, NaN converts to false . all other values give true . 
