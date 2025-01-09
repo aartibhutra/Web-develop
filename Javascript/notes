@@ -1,7 +1,8 @@
 INTRODUCTION :
 
-javascript is a scripting language that enables you to create dynamically updated contaent multimedia , animate images and much more .
-in HTML , Javascript code is inserted between <script> and </script> tages 
+javascript is a functional programming language . 
+javascript is a scripting language that enables you to create dynamically updated content multimedia , animate images and much more .
+in HTML , Javascript code is inserted between <script> and </script> tags
 usually we are making different file(script) for the javascript but we also write in html file 
 
 style written at first and script written at the end .
