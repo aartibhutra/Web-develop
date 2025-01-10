@@ -9,7 +9,7 @@
 body{
     background-color: burlywood;
 }
-/* here (width<=400px)==(max-width:400px) written as decreasing order and read as upto*/
+/* here (width<=400px)==(max-width:400px) written as decreasing order and read as up-to*/
 /* @media (width<=400px){
     body{
         background-color: rgb(95, 60, 8);
@@ -33,7 +33,7 @@ body{
 
 
 /* min-width means starting from 
-and read as strating from */
+and read as starting from */
 /* @media (min-width:400px){
     body{
         background-color: rgb(95, 60, 8);
@@ -53,7 +53,7 @@ and read as strating from */
         background-color: rgb(95, 60, 8);
     }
 } */
- /* new syntex for and  */
+ /* new syntax for and  */
 @media (400px<=width<=600px) {
     body{
         background-color: rgb(95, 60, 8);

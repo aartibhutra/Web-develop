@@ -1,0 +1,74 @@
+/* using the -- we initialize the variable with all small letters  */
+/* define variable with the help of var() function  */
+/* here we also define inside the var() fallback when we can't find the variable then we apply fallback  like var(variable-name , fallback); */
+
+
+/* here are two types of variable : local and global variable  */
+
+/* local variable are those variable that we define in the local classes and elements  */
+
+/* global variable define with the help of the html (root element ) with the help of :root and that are accessible to all the classes and elements within the body  */
+
+:root{
+    --primary-text-color:#2c0b0b;
+    --secondary-text-color:#231818;
+    --card-background-color:rgb(166, 59, 59);
+    --background-color:rgb(209, 209, 209);
+    --default-margin : 30px;
+}
+
+
+/* overwrite the properties inside the global variable  */
+.dark{
+    --primary-text-color:#524d4d;
+    --secondary-text-color:#564141;
+    --card-background-color:rgb(153, 129, 129);
+    --background-color:rgb(0, 0, 0);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 40px;
+    min-height: 100vh;
+    /* --my-var : chocolate;  */
+    background-color:var(--background-color);
+} 
+
+h1{
+    text-align: center;
+    /* background-color:var(--my-var,rgb(186, 162, 146)); */
+    color: var(--primary-text-color);
+}
+
+.box{
+    /* --my-var : chocolate; */
+
+    /* overwrite the value  */
+    /* --my-var :rgb(186, 162, 146);  */
+
+    padding: var(--default-margin);
+    margin-block: var(--default-margin);
+    background-color:var(--card-background-color);
+    border-radius: var(--default-margin);
+}
+
+h2{
+    color: var(--primary-text-color);
+    /* background-color:var(--my-var); */
+    margin-bottom: 2var(--default-margin);
+}
+p{
+    color: var(--secondary-text-color);
+}
+
+/* @media  screen and (min-width:880px) {
+    .container{
+        --my-var:rgb(50, 48, 46);
+    }
+    
+} */
