@@ -1,0 +1,120 @@
+
+/* pseudo class  */
+/* A pseudo class is used to define a special state of an element 
+                A few examples :
+                                    :visited,:link
+                                    :hover,:active
+                                    :first-child
+                                    :last-child
+                                    :nth-child(work on the basis of formula an+b) for further example go visit to the W3 website */
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+}
+.primary-btn:link
+{
+    color:darkgreen;
+    padding: 10px;
+}
+.primary-btn:visited{
+    color:rgb(203, 27, 112);
+}
+.primary-btn:hover{
+    color: brown;
+    background-color: blanchedalmond;
+}
+.primary-btn:active{
+    color:black;
+    background-color:white;
+    border: 4px solid green;
+}
+
+ul li:first-child{
+    background-color:cadetblue;
+}
+
+ul li:last-child{
+    background-color:chocolate;
+}
+
+/* nth child */
+/* formula: an+b  */
+/* n is start with zero  */
+
+
+/* ul li:nth-child(4){ 
+    /* here b=4  */
+    /* background-color:darkslateblue;
+ }   */
+
+ /* here an  */
+/* ul li:nth-child(2n){
+    background-color:rgb(81, 81, 21);
+} */
+
+
+/* here an+b  */
+ul li:nth-child(2n+1){
+    background-color:rgb(81, 81, 21);
+}
+
+
+
+
+
+
+/* Pseudo element */
+
+                    /* A CSS pseudo-element is used to style specified parts of an element not the entire element 
+                    
+                    A few examples are :
+                                            ::first-letter
+                                            ::first-line
+                                            ::before
+                                            ::after*/
+
+
+
+
+h2::first-letter{
+    font-size: 3rem;
+        color:crimson;
+}
+
+p::first-line{
+    background-color: cornflowerblue;
+}
+
+/* Represents the portion of a document that has been highlighted by the user. */
+::selection{
+    color:gold;
+    background-color:black;
+}
+
+
+/* before and after (usually we use in the google form like a required part ) */
+
+/* h3::before{
+    content:'hii';
+}
+h3::after{
+    content :'*'
+} */
+
+.required::after{
+    content:'*';
+    color:red;
+}
+
+.important::after{
+    content:'important';
+    background-color:red;
+    color:white;
+    padding:0.2rem;
+    font-size:0.5rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
