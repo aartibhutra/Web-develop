@@ -9,7 +9,7 @@ body{
 }
 
 .title{
-    color:rgb(150, 140, 127);
+    color:rgb(223, 212, 197);
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -21,11 +21,10 @@ body{
 }
 
 .display{
-    color: rgb(144, 114, 114);
-    font-size: 36px;
-    /* text-align: center; */
+    color: rgb(174, 168, 168);
+    font-size:45px;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 .container{
     height: 70vh;
@@ -50,7 +49,7 @@ body{
     width: 18vmin;
     border-radius: 4rem;
     border:none;
-    box-shadow: 1px 1px 20px rgb(224, 48, 13);
+    box-shadow: 1px 1px 20px rgb(222, 65, 34);
     font-size: 8vmin;
     cursor:grab;
 }

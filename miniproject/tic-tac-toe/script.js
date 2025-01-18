@@ -32,11 +32,12 @@ const changePlayer = () => {
 }
 
 const resetGame = () =>{
-    turnO = true;
     playerDisplay.classList.remove(`Player${Player}`);
-    Player = Player === 'X'? 'O' : 'X';
+    Player = Player === 'X'? 'O' : 'O';
     playerDisplay.innerText = Player;
     playerDisplay.classList.add(`Player${Player}`);
+    turnO = true;
+    count=0;
     enabledBoxes();
 }
 const enabledBoxes = () =>{
@@ -60,8 +61,8 @@ boxes.forEach((box) =>{
             changePlayer();
         }else{
             box.innerText="X";
-            turnO = true;
             count+=1;
+            turnO = true;
             changePlayer();
         }
         box.disabled = true;
@@ -84,10 +85,10 @@ const checkWinner = () =>{
                     // console.log("Winner",pos1);
                     showWinner(pos1);
                 }else  if(pos1!=pos2&&pos2!=pos3){
-                    if(count===9){
-                        showDraw();
-                    }
-                } 
+                            if(count===9){
+                                    showDraw();
+                            }
+                        } 
             }
     };
 };
@@ -95,12 +96,15 @@ const checkWinner = () =>{
 const showDraw =() =>{
        draw.innerText=`Draw`;
        control.classList.remove("hideDraw");
-        // disabledBoxes();
+       count=0;
+        disabledBoxes();
 }
 
 const showWinner = (Winner) =>{
     msg.innerText =` Congratulation, Winner is ${Winner}`;
+    count =0;
     msgContainer.classList.remove("hide");
+    control.classList.add("hideDraw");
     disabledBoxes();
 }
 
