@@ -33,7 +33,8 @@ const changePlayer = () => {
 
 const resetGame = () =>{
     playerDisplay.classList.remove(`Player${Player}`);
-    Player = Player === 'X'? 'O' : 'O';
+    // Player = Player === 'X'? 'O' : 'O';
+    Player = 'O';
     playerDisplay.innerText = Player;
     playerDisplay.classList.add(`Player${Player}`);
     turnO = true;
