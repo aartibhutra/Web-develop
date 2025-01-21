@@ -1,4 +1,4 @@
-// define:a datatype in programming is a classification that specifies which type of a variable has and what type of mathematical , relational or logical operations can be apllied to it without causing an error 
+// define:a datatype in programming is a classification that specifies which type of a variable has and what type of mathematical , relational or logical operations can be applied to it without causing an error 
 //     a. String(""):
 //     b.Number:
 //     c.Boolean:
@@ -79,7 +79,14 @@ c = true;
 c = Number(c);
 console.log(c);
 
-
+//primitive datatype:
+                        // Null 
+                        // Undefined
+                        // Boolean 
+                        // Number
+                        // Bigint
+                        //String
+                        //Symbol: use as a  key 
 
 
 
