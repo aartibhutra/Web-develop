@@ -1,0 +1,84 @@
+/* Transform Properties 
+                        : the transform property applies a 2D 3D transformation to an element .This property allows you to rotate , scale , move , skew etc elements 
+                                 scale : with the help of this we can resize the box on x and y direction 
+                                 skew
+                                 translate 
+                                 rotate */
+
+/* Transform Origin 
+                    : the transform origin property allows you to change the position of transformed elements 
+                    2D transformation can change the x and y-axis of an element . 3D transformations can also change the z-axis of an element
+                            Supported Values :
+                                                left 
+                                                center
+                                                right 
+                                                length
+                                                % */
+
+
+.container{
+    width:400px;
+    height:400px;
+    background-color: rgb(86, 53, 30);
+    margin:80px auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color:antiquewhite;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Scale example */
+    /* transform: scale(0.5); */
+    /* transform: scale(2); */
+    /* transform: scale(1);*/
+
+    /* transform: scaleX(2); */
+    /* transform: scaleX(0.5) scaleY(2); */
+    /* transform: scale(2,1.5); */
+
+    /* skew example  */
+    /* in x direction */
+    /* transform: skew(20deg); */
+
+    /* transform: skew(20deg,40deg); */
+
+    /* translate example  */
+    /* in x direction  */
+    /* transform: translate(20px); */
+
+    /* in x and y direction  */
+    /* transform: translate(20px,40px);
+    transform: translate(20px,-40px);
+    transform: translate(-20px,-40px);
+    transform: translate(50%);
+    transform: translate(50%,50%); */
+
+    /* rotate example */
+    /* in both direction  */
+    /* transform: rotate(20deg); */
+    /* transform: rotateX(180deg); */
+
+    /* apply all properties  */
+    /* transform: rotate(45deg) scale(1.2) skew(30deg) translate(45px); */
+
+
+    /* transform - origin example  */
+    /* transform: rotate(45deg); */
+    /* transform-origin: top left; */
+    /* transform-origin: top */
+
+    /* here in % first value is related to the width and second value realted to the height  */
+    transform-origin: 10% 0%;
+
+
+    transition: 0.5 ease;
+    transform-origin: 100px 200px;
+}
+
+.box:hover{
+    transform: rotate(45deg);
+}

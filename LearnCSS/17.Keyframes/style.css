@@ -1,0 +1,119 @@
+/* CSS Animation Properties 
+                            : CSS allows the anImation of HTML elements without using javascript .You can change as many CSS properties as you want as often as you wish .TO use CSS animation you must first specify some keyframes for the animation 
+                            Keyframes hold what styles the element will have at certain times:
+                                        animation-name
+                                        animation-duration
+                                        animation-delay
+                                        animation-iteration-count
+                                        animation-direction: this property specify whether an animation should by played forwards , backwards or in alternate cycles , it have the following values 
+                                                        : 
+                                                        normal
+                                                        reverse
+                                                        alternate
+                                                        alternate-reverse
+                                        animation-timing-function: its also like a transition-timing-function
+                                        animation-fill-mode : this property specifies a style for the target element when the animation is not playing (before it starts , after it ends or both)
+                                                none
+                                                forwards
+                                                backwards
+                                                both*/
+
+body{
+    margin: 0;
+    background-color:teal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 200px;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    animation:orbit 4s linear infinite;
+    border-radius:50%;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    /* animation-name: circles; */
+    /* animation-name:slide-in; */
+    /* animation-name:orbit; */
+    animation-duration: 1s;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 4; */
+    animation-iteration-count:infinite;
+    /* animation-direction:reverse; */
+    animation-direction:alternate;
+    animation-timing-function:ease-in;
+    animation-fill-mode: forwards;
+    border-radius:50%;
+}
+.loader{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 10px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background-color:white;
+    animation:up-down 0.8s ease infinite alternate;
+}
+.dot:nth-child(2){
+    animation-delay:0.1s;
+}
+.dot:nth-child(3){
+    animation-delay:0.2s;
+}
+.dot:nth-child(4){
+    animation-delay:0.3s;
+}
+@keyframes up-down {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+@keyframes orbit {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes slide-in {
+    0%{
+        transform: translate(-200px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+}
+
+/* in the % denote like which time ,what we have to do  */
+@keyframes circles {
+    0%,100%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(200px,0);
+    }
+    50%{
+        transform: translate(200px,200px);
+    }
+    75%{
+        transform: translate(0,200px);
+    }
+    /* 100%{
+        transform: translate(0,0);
+    } */
+}
