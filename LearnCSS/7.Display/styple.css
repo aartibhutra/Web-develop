@@ -4,7 +4,7 @@
        a.block : paragraph , heading(<h1> to <h6>) ,division,form,list(<ol>,<ul>and <li>)
 
         b.inline:span , anchor(<a>)
-        drawbacks: we can't define height , weidth 
+        drawbacks: we can't define height , width 
         and margin only define for left and right 
 
 
@@ -18,7 +18,7 @@
 *{
         /* solid box  */
         /* border: 1px solid rgb(129, 45, 45); */
-        /* and we also dowload te extension pesticide  */
+        /* and we also download te extension pesticide  */
 
 
         margin:0;
